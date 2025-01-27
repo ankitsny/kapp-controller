@@ -50,6 +50,8 @@ jobs:
         kubernetes-version: ${{ env.k8s_version }}
         driver: docker
         start: true
+        cpus: 4
+        memory: 8192m
     - name: Verify env
       run: |
         kind version
